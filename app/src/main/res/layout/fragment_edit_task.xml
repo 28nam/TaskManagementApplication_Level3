@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--　★変更しないでください★　-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".RegistrationActivity">
+
+        <!-- タスク説明タイトルを表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskDescriptionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_task_discription_title"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- タスク説明を編集するEditText -->
+        <EditText
+            android:id="@+id/etEditTaskDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditTaskDescriptionTitle" />
+
+        <!-- タスク完了日時タイトルを表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskCompletionDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_task_completion_date_title"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btEditDate"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- タスク完了日時を表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskCompletionDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btEditDate"
+            app:layout_constraintEnd_toStartOf="@+id/btEditDate"
+            app:layout_constraintStart_toStartOf="@+id/guidelineComplationDate" />
+
+        <!-- タスク完了日時を編集するButton -->
+        <Button
+            android:id="@+id/btEditDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/bt_edit_date"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEditTaskDescription" />
+
+        <!-- タスク完了時刻タイトルを表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskCompletionTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_task_completion_time_title"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btEditTime"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- タスク完了時刻を表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskCompletionTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btEditTime"
+            app:layout_constraintEnd_toStartOf="@+id/btEditTime"
+            app:layout_constraintStart_toStartOf="@+id/guidelineComplationDate" />
+
+        <!-- タスク完了時刻を編集するButton -->
+        <Button
+            android:id="@+id/btEditTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/bt_edit_time"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btEditDate" />
+
+        <!-- タスク完了日時のガイドライン -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineComplationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="150dp" />
+
+        <!-- タスクステータスタイトルを表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskStatusTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_task_status_title"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btEditTime" />
+
+        <!-- タスクステータスを選択するSpinner -->
+        <Spinner
+            android:id="@+id/spEditTaskStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/sp_task_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditTaskStatusTitle" />
+
+        <!-- タスク通知タイトルを表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskNotificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_task_notification_title"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spEditTaskStatus" />
+
+        <!-- タスク通知オプションを選択するRadioGroup -->
+        <RadioGroup
+            android:id="@+id/rgEditTaskNotification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checkedButton="@id/rbEditNotNotify"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditTaskNotificationTitle">
+
+            <!-- 通知するRadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_notify"
+                android:textSize="20sp" />
+
+            <!-- 通知しないRadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditNotNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/rb_not_notify"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <!-- タスクグループタイトルを表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskGroupTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_task_group_title"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgEditTaskNotification" />
+
+        <!-- タスクグループを選択するRadioGroup -->
+        <RadioGroup
+            android:id="@+id/rgEditTaskGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checkedButton="@id/rbEditNotsetGroup"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditTaskGroupTitle">
+
+            <!-- 重要RadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditImportant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/important"
+                android:textSize="20sp" />
+
+            <!-- 緊急RadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditEmergency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/emergency"
+                android:textSize="20sp" />
+
+            <!-- メモRadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/note"
+                android:textSize="20sp" />
+
+            <!-- グループ未設定RadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditNotsetGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/not_set"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <!-- タスクバーカラータイトルを表示するTextView -->
+        <TextView
+            android:id="@+id/tvEditTaskBarColorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_task_bar_color_title"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgEditTaskGroup" />
+
+        <!-- タスクバーカラーを選択するRadioGroup -->
+        <RadioGroup
+            android:id="@+id/rgEditTaskBarColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:checkedButton="@id/rbEditNotsetColor"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEditTaskBarColorTitle">
+
+            <!-- 青RadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_blue"
+                android:textSize="20sp" />
+
+            <!-- 赤RadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/rb_red"
+                android:textSize="20sp" />
+
+            <!-- 緑RadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/rb_green"
+                android:textSize="20sp" />
+
+            <!-- カラー未設定RadioButton -->
+            <RadioButton
+                android:id="@+id/rbEditNotsetColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/not_set"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

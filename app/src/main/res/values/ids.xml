@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvEditTaskDescriptionTitle" type="id" />
+    <item name="etEditTaskDescription" type="id" />
+    <item name="tvEditTaskCompletionDateTitle" type="id" />
+    <item name="tvEditTaskCompletionDate" type="id" />
+    <item name="btEditDate" type="id" />
+    <item name="tvEditTaskCompletionTimeTitle" type="id" />
+    <item name="tvEditTaskCompletionTime" type="id" />
+    <item name="btEditTime" type="id" />
+    <item name="guidelineComplationDate" type="id" />
+    <item name="tvEditTaskStatusTitle" type="id" />
+    <item name="spEditTaskStatus" type="id" />
+    <item name="tvEditTaskNotificationTitle" type="id" />
+    <item name="rgEditTaskNotification" type="id" />
+    <item name="rbEditNotify" type="id" />
+    <item name="rbEditNotNotify" type="id" />
+    <item name="tvEditTaskGroupTitle" type="id" />
+    <item name="rgEditTaskGroup" type="id" />
+    <item name="rbEditImportant" type="id" />
+    <item name="rbEditEmergency" type="id" />
+    <item name="rbEditNote" type="id" />
+    <item name="rbEditNotsetGroup" type="id" />
+    <item name="tvEditTaskBarColorTitle" type="id" />
+    <item name="rgEditTaskBarColor" type="id" />
+    <item name="rbEditBlue" type="id" />
+    <item name="rbEditRed" type="id" />
+    <item name="rbEditGreen" type="id" />
+    <item name="rbEditNotsetColor" type="id" />
+</resources>

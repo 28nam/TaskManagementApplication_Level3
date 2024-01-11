@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">タスク管理アプリ</string>
+    <string name="tv_all_tasks_title">全てのタスク</string>
+
+    <string name="task_description_title">１.タスクを登録しよう</string>
+    <string name="task_description_info">右下の「＋」ボタンをタップすると、\nタスクを登録できます。\n\n登録したタスクはこのホーム画面に\n一覧表示されます。</string>
+    <string name="task_description_title2">２.タスクバーをタップしよう</string>
+    <string name="task_description_info2">タスクバーをタップするとタスクの\n詳細を確認できます。\nタスク詳細の画面では、タスクの\n「編集」「完了」「削除」ができます。</string>
+
+    <string name="completed_all_tasks_msg">全てのタスクが完了されました！\nおめでとうございます！</string>
+
+    <string name="tv_completed_title">完了</string>
+    <string name="tv_edit_title">編集</string>
+
+    <string name="tv_task_registration_title">タスク新規登録</string>
+    <string name="tv_task_discription_title">タスク内容</string>
+    <string name="tv_task_completion_date_title">完了予定日：</string>
+    <string name="tv_task_completion_time_title">完了予定時刻：</string>
+    <string name="bt_edit_date">日付変更</string>
+    <string name="bt_edit_time">時刻変更</string>
+    <string name="tv_task_status_title">タスクの対応状況</string>
+    <string-array name="sp_task_status">
+        <item>未着手</item>
+        <item>対応中</item>
+        <item>保留</item>
+        <item>☆完了済み</item>
+    </string-array>
+    <string name="tv_task_notification_title">タスク事前通知</string>
+    <string name="rb_notify">通知する</string>
+    <string name="rb_not_notify">通知しない</string>
+    <string name="tv_task_group_title">タスクグループの指定</string>
+    <string name="tv_task_bar_color_title">タスクバーの色指定</string>
+    <string name="rb_blue">青</string>
+    <string name="rb_red">赤</string>
+    <string name="rb_green">緑</string>
+    <string name="option_menu_registration">タスクを登録</string>
+    <string name="task_registration_cancel_dialog_msg">入力内容を保存せずに\n終了しますか？</string>
+    <string name="task_registration_dialog_msg">このタスクを\n登録しますか？</string>
+    <string name="toast_registration_msg">を登録しました</string>
+
+    <string name="tv_details_title">タスク詳細</string>
+
+    <string name="delete_dialog_msg">を\n削除しますか？</string>
+    <string name="toast_deleted_msg">を削除しました</string>
+
+    <string name="completed_dialog_msg">を\n完了しますか？</string>
+    <string name="toast_completed_msg">を完了しました</string>
+
+    <string name="tv_edit_task_title">タスク編集</string>
+    <string name="option_menu_edit">編集内容を登録</string>
+    <string name="task_edit_cancel_dialog_msg">編集内容を保存せずに\n終了しますか？</string>
+    <string name="task_edit_dialog_msg">編集内容を\n登録しますか？</string>
+    <string name="toast_edited_msg">を編集しました</string>
+
+    <string name="tv_setting_title">設定</string>
+    <string name="tv_sort_title">タスクの並び替え</string>
+    <string name="rb_near_date">直近の日付のタスクから表示する</string>
+    <string name="rb_far_date">将来の日付のタスクから表示する</string>
+    <string name="tv_finished_task_title">完了済みのタスクの表示</string>
+    <string name="rb_show_task">表示する</string>
+    <string name="rb_hide_task">表示しない</string>
+    <string name="tv_task_group_display_title">表示するタスクグループ</string>
+    <string name="bt_reset">初期設定に\n戻す</string>
+    <string name="bt_save">設定内容を\n保存する</string>
+    <string name="save_dialog_msg">設定内容を\n保存しますか？</string>
+    <string name="dialog_btn_save">保存する</string>
+    <string name="reset_dialog_msg">設定内容を\n初期設定に戻しますか？</string>
+    <string name="reset_dialog_btn_back">戻す</string>
+    <string name="settings_cancel_dialog_msg">変更内容を\n破棄しますか？</string>
+
+    <string name="important">重要</string>
+    <string name="emergency">緊急</string>
+    <string name="note">メモ</string>
+    <string name="not_set">未設定</string>
+
+    <string name="btn_registration">登録する</string>
+    <string name="btn_finish">終了する</string>
+    <string name="btn_revocation">破棄する</string>
+    <string name="btn_delete">削除する</string>
+    <string name="btn_completed">完了する</string>
+    <string name="btn_cancel">キャンセル</string>
+
+    <string name="notification_channel_name">タスク管理アプリ</string>
+    <string name="msg_notification_title">の予定が１時間前です</string>
+
+    <string name="settings_file_key">com.websarva.wings.android.taskmanagementapplication.SETTING_FILE_KEY</string>
+    <string name="default_settings_file_key">com.websarva.wings.android.taskmanagementapplication.DEFAULT_SETTING_FILE_KEY</string>
+    <string name="settings_sort_type">sortTypeId</string>
+    <string name="settings_completed_task_display_type">completedTaskDisplayTypeId</string>
+    <string name="settings_important_state">importantState</string>
+    <string name="settings_emergency_state">emergencyState</string>
+    <string name="settings_note_state">noteState</string>
+    <string name="settings_notset_state">notSetState</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

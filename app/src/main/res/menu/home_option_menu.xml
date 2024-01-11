@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--　★変更しないでください★　-->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 設定オプションメニューアイテム -->
+    <item
+        android:id="@+id/optionsMenuSettings"
+        android:title="@string/tv_setting_title"
+        android:icon="@drawable/ic_baseline_settings"
+        app:showAsAction="ifRoom"/>
+</menu>
